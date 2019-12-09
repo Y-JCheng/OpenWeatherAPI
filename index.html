@@ -48,7 +48,7 @@
 		var location = $("#location").val()
 		if (location == "") location = "Ann+Arbor";
 
-		let query = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + forc + "&APPID=" + YourWeatherAppId
+		let query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + forc + "&APPID=" + YourWeatherAppId
         console.log("Query is :" + query)
 
         $.getJSON(query,function(json){
